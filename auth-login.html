@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bicol University Assisted Voting System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/pages/auth.css">
+</head>
+
+<style>
+body {
+background:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5) ), url("D:/Acads/demo/images/BicolU.jpg");
+background-size:cover;
+}
+</style>
+
+<body>
+    <div id="auth">
+
+        <div class="row h-100">
+            <div class="col-lg-10 col-15">
+                <div id="auth-left">
+                    <div class="auth-logo">
+                        <a href="index.html"><img src="D:\Acads\demo\images\Bicol_University.png"  alt="Logo"></a>
+                    </div>
+                    <h1 class="auth-title" style= "color:#009bde;">Assisted Voting System.</h1>
+                    <p class="auth-subtitle mb-5;" style= "color:#009bde" >Login a student's account.</p>
+
+                    <form action="index.html">
+                        <div class="form-group position-relative has-icon-left mb-4">
+                            <input type="text" class="form-control form-control-xl" style="width: 400px;" placeholder="e-mail">
+                            <div class="form-control-icon">
+                                <i class="bi bi-person"></i>
+                            </div>
+                        </div>
+                        <div class="form-group position-relative has-icon-left mb-4">
+                            <input type="password" class="form-control form-control-xl" style="width: 400px;" placeholder="Password">
+                            <div class="form-control-icon">
+                                <i class="bi bi-shield-lock"></i>
+                            </div>
+                        </div>
+                        <div class="form-check form-check-lg d-flex align-items-end">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label text-gray-600" for="flexCheckDefault">
+                                Keep me logged in
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-block btn-lg shadow-lg mt-5" style = "color:#1b1b1b; background-color:#009bde; border-color:#292929; width: 400px;">Log in</button>
+                    </form>
+                    <div class="text-left mt-5 text-lg fs-4">
+                        <p class="text-gray-600"> <a href="auth-register.html"
+                                class="font-bold">Sign
+                                up</a>.</p>
+                        <p><a class="font-bold" href="auth-forgot-password.html">Forgot password?</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 d-none d-lg-block">
+                <div id="auth-right">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
