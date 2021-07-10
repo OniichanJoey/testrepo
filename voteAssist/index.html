@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+</head>
+
+<style>
+    body{
+        padding: 30px 30px;
+        background-image: url(assets/images/bg/bu-back.jpg);
+        background-size: cover;
+        padding-top: 50px;
+        background-attachment: fixed;
+        }
+        h2{
+            font-family: timems-new-roman;
+            color: black;
+        }
+        .btn{
+            color: 
+        }
+</style>
+<script>
+    function passval(){
+        var select = document.getElementById("mytext").value;
+        localStorage.setItem("ddvalue", select);
+        return true;
+    }
+</script>
+<body>
+    <h2><center>Welcome to USC/CSC Online Election System : Assisted Voting</center></h2>
+
+                <div class="col-md-6 col-12" style="width: 70%; margin: 0 auto;">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Student Information:</h4>
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <form class="form form-horizontal">
+                                            <div class="form-body">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <label>Student Name</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="form-group has-icon-left">
+                                                            <div class="position-relative">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Full Name" id="first-name-icon">
+                                                                <div class="form-control-icon">
+                                                                    <i class="bi bi-person"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label>Student ID</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="form-group has-icon-left">
+                                                            <div class="position-relative">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="ID" id="first-name-icon">
+                                                                <div class="form-control-icon">
+                                                                    <i class="bi bi-credit-card-2-front"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label>Bicol University Email</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="form-group has-icon-left">
+                                                            <div class="position-relative">
+                                                                <input type="email" class="form-control"
+                                                                    placeholder="BU Email" id="first-name-icon">
+                                                                <div class="form-control-icon">
+                                                                    <i class="bi bi-envelope"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                <div class="divider divider-center">
+                    <p><div class="divider-text" style="font-weight: bold"><h2>Voting Section</h2></div></p>
+
+
+<!--Selection of Candidates-->
+
+                <section class="bootstrap-select">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-4">
+                                                <fieldset class="form-group">
+                                                    <h3>For USC President</h3>
+                                                    <select class="form-select" id="uscpres">
+                                                        <option>--select--</option>
+                                                        <option>candidate 1</option>
+                                                        <option>candidate 2</option>
+                                                        <option>candidate 3</option>
+                                                        <option>candidate 4</option>
+                                                        <option>candidate 5</option>
+                                                        <option>candidate 6</option>
+                                                    </select>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bootstrap-select">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-4">
+                                                <fieldset class="form-group">
+                                                    <h3>For USC Vice-President</h3>
+                                                    <select class="form-select" id="uscvpres">
+                                                        <option>--select--</option>
+                                                        <option>candidate 1</option>
+                                                        <option>candidate 2</option>
+                                                        <option>candidate 3</option>
+                                                        <option>candidate 4</option>
+                                                        <option>candidate 5</option>
+                                                        <option>candidate 6</option>
+                                                    </select>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bootstrap-select">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-4">
+                                                <fieldset class="form-group">
+                                                    <h3>For USC Secretary</h3>
+                                                    <select class="form-select" id="uscsec">
+                                                        <option>--select--</option>
+                                                        <option>candidate 1</option>
+                                                        <option>candidate 2</option>
+                                                        <option>candidate 3</option>
+                                                        <option>candidate 4</option>
+                                                        <option>candidate 5</option>
+                                                        <option>candidate 6</option>
+                                                    </select>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bootstrap-select">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-4">
+                                                <fieldset class="form-group">
+                                                    <h3>For USC Treasurer</h3>
+                                                    <select class="form-select" id="usctres">
+                                                        <option>--select--</option>
+                                                        <option>candidate 1</option>
+                                                        <option>candidate 2</option>
+                                                        <option>candidate 3</option>
+                                                        <option>candidate 4</option>
+                                                        <option>candidate 5</option>
+                                                        <option>candidate 6</option>
+                                                    </select>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bootstrap-select">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-4">
+                                                <fieldset class="form-group">
+                                                    <h3>For USC Business Manager</h3>
+                                                    <select class="form-select" id="uscbmnrg">
+                                                        <option>--select--</option>
+                                                        <option>candidate 1</option>
+                                                        <option>candidate 2</option>
+                                                        <option>candidate 3</option>
+                                                        <option>candidate 4</option>
+                                                        <option>candidate 5</option>
+                                                        <option>candidate 6</option>
+                                                    </select>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bootstrap-select">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-4">
+                                                <fieldset class="form-group">
+                                                    <h3>For USC P.I.O.</h3>
+                                                    <select class="form-select" id="uscpio">
+                                                        <option>--select--</option>
+                                                        <option>candidate 1</option>
+                                                        <option>candidate 2</option>
+                                                        <option>candidate 3</option>
+                                                        <option>candidate 4</option>
+                                                        <option>candidate 5</option>
+                                                        <option>candidate 6</option>
+                                                    </select>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bootstrap-select">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-4">
+                                                <fieldset class="form-group">
+                                                    <h3>For USC College Represantative</h3>
+                                                    <select class="form-select" id="uscrep">
+                                                        <option>--select--</option>
+                                                        <option>candidate 1</option>
+                                                        <option>candidate 2</option>
+                                                        <option>candidate 3</option>
+                                                        <option>candidate 4</option>
+                                                        <option>candidate 5</option>
+                                                        <option>candidate 6</option>
+                                                    </select>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                                    <!--Button Triggers Modal-->
+
+                                    <button type="button" class="btn btn-outline-primary block" data-bs-toggle="modal"
+                                        data-bs-target="#default">
+                                        Verify Vote
+                                    </button>
+
+                                    <!--Verify Modal -->
+                                    <div class="modal fade text-left" id="default" tabindex="-1" role="dialog"
+                                        aria-labelledby="myModalLabel1" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="myModalLabel1">Verify vote before submitting</h5>
+                                                    <button type="button" class="close rounded-pill"
+                                                        data-bs-dismiss="modal" aria-label="Close">
+                                                        <i data-feather="x"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>
+
+                                                        <!--
+                                                        Modal Message Here
+                                                        -->
+
+                                                    </p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn" data-bs-dismiss="modal">
+                                                        <i class="bx bx-x d-block d-sm-none"></i>
+                                                        <span class="d-none d-sm-block">Back</span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-success ml-1 rounded-pill"
+                                                        data-bs-dismiss="modal">
+                                                        <i class="bx bx-check d-block d-sm-none"></i>
+                                                        <span class="d-none d-sm-block">Submit</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
